@@ -15,14 +15,13 @@
       style.innerHTML = `
       @keyframes ripple-bright {
         100% {
-		  background-color:rgba(255,255,255,0);
+          background-color:rgba(255,255,255,0);
           transform: scale(${times});
         }
-      }
-	  `
+      }`
       ripple.style.cssText = `position: absolute;
-	    left:${x}px;
-	    top:${y}px;
+	left:${x}px;
+	top:${y}px;
         width: 2px;
         height: 2px;
         border-radius: 50%;

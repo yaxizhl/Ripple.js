@@ -7,6 +7,8 @@
         e.target.clientHeight > e.target.clientWidth
           ? e.target.clientHeight
           : e.target.clientWidth
+      this.style.position = el.style.position || 'relative'
+      this.style.overflow = el.style.overflow || 'hidden'
       style.setAttribute('type', 'text/css')
       style.innerHTML = `
       @keyframes ripple-bright {
